@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Validation</title>
+    <link rel="stylesheet" href="validation.css">
+    <script src="validation.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <h1>validation form</h1>
+        </div>
+        <form onsubmit="return !!(validuser() & validpassword())"  class="formbox">
+            <div class="container_box">
+                <div class="container_field">
+                    <label >User Name</label>
+                    <input type="text" id="uname" class="filed"><br>
+                    <p id="result1"></p>
+                </div>
+                <div class="container_field">
+                    <label >Password</label>
+                    <input type="password" id="password" class="filed"><br>
+                    <p id="result2"></p>
+                </div>
+                <div  class="container_field">
+                    <input type="submit" class="button">
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
